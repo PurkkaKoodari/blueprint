@@ -98,6 +98,7 @@ export class ResizeSensor extends AbstractPureComponent<ResizeSensorProps> {
 
     public componentWillUnmount() {
         this.observer.disconnect();
+        this.prevElement = undefined;
     }
 
     /**
